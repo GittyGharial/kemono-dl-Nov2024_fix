@@ -284,6 +284,9 @@ class downloader:
 
     def clean_post(self, post:dict, user:dict, domain:str):
         new_post = {}
+        # NOV 25 2024 IT BROKE RECENTLY.  LOOKS LIKE POST IS NOW A MORE NESTED DICT
+        # TENTATIVE FIX:  UN-NEST WITH THE FOLLOWING LINE
+        post = post['post']
         # set post variables
         new_post['post_variables'] = {}
         new_post['post_variables']['title'] = post['title']
