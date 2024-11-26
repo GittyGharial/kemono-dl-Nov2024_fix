@@ -1,3 +1,10 @@
+# GRITTY GHARIAL ADDITION NOV 25 2024:
+
+I was using https://github.com/ILogOutOnTheToilet/kemono-dl but today (Nov 25 2024) I noticed it had broken.  Based on the error message and debugging I was able to implement a basic workaround in the clean_post() function in main.py:  un-nest the new post variable with 'post = post['post']' . This restores the kind of dict structure that the rest of the code clearly expected to see.
+
+# The lines starting from '#kemono-dl' and below are from the original author at https://github.com/AlphaSlayer1964/kemono-dl and forker at https://github.com/ILogOutOnTheToilet/kemono-dl.  If anyone finds this and can get ahold of the original maintainers please do
+# I am soooooooooooooo not qualified to maintain this repo on my own, I barely know how to use GitHub at all
+
 # kemono-dl
 A downloader tool for kemono.party and coomer.party.
 
